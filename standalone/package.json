@@ -6,7 +6,8 @@
     "dev": "wattpm dev",
     "build": "wattpm build",
     "start": "wattpm start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "benchmark": "autocannon -c 1000 -p 30 -d 20 -t 30 -W [ -c 100 -p 10 -d 10 ] http://127.0.0.1:3042"
   },
   "dependencies": {
     "@platformatic/next": "^3.10.0",
@@ -20,6 +21,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autocannon": "^8.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4",
