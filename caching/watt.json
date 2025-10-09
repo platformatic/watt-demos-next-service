@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/runtime/3.10.0.json",
+  "watch": true,
+  "applications": [
+    {
+      "id": "next",
+      "path": "applications/next"
+    },
+    {
+      "id": "node",
+      "path": "applications/node"
+    }
+  ],
+  "entrypoint": "next",
+  "logger": {
+    "level": "{PLT_SERVER_LOGGER_LEVEL}"
+  },
+  "server": {
+    "hostname": "0.0.0.0",
+    "port": "{PORT}"
+  }
+}

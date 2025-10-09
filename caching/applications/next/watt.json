@@ -1,0 +1,7 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/next/3.10.0.json",
+  "cache": {
+    "adapter": "valkey",
+    "url": "redis://127.0.0.1:6379"
+  }
+}
